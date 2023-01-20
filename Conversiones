@@ -1,0 +1,53 @@
+# practica2-conversor-c-Hernandez-Ruben-04
+practica2-conversor-c-Hernandez-Ruben-04 created by GitHub Classroom
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //----------- MENU CONVERSIONES ---------------
+    cout << "Ingresa las conversiones que deseas realizar";
+    char opcion;
+    cin >> opcion;
+
+	switch (opcion)
+	{
+	case 'a': cout << "Conversion de divisas";
+		float moneda;
+		cout << "Ingresa la cantidad en MXN" ;
+			cin >> moneda;
+
+			cout << "Euro" << moneda * 20.57 << endl;
+			cout << "Dolar estadounidense" << moneda * 18.99 << endl;
+			cout << "Libra Esterlina" << moneda * 23.51 << endl;
+			cout << "Yen japones" << moneda * 0.15 << endl;
+			cout << "Rublo ruso" << moneda * 0.27 << endl;
+		break;
+		
+	case 'b': cout << "Conversion de distancia";
+		float km;
+		cout << "Ingresa la cantidad en kilometros";
+		cin >> km;
+
+		cout << "Pulgadas (in)" << km * 39370 << endl;
+		cout << "Pies (ft)" << km * 3281 << endl;
+		cout << "Centimetros (cm)" << km * 100000 << endl;
+		cout << "Nanometros (nm)" << km * 1000000000000 << endl;
+		cout << "A. Luz (ly)" << km * 9461000000000 << endl;
+		break;
+		
+	case 'c': cout << "Conversion de peso";
+		float kg;
+		cout << "Ingresa la cantidad en Kilogramos";
+		cin >> kg;
+
+		cout << "Toneladas (Ton)" << kg / 0.001 << endl;
+		cout << "Onzas (Oz)" << kg * 35.274 << endl;
+		cout << "Libras (cm)" << kg * 2.205 << endl;
+		cout << "Microgramo (ug)" << kg * 1000000000 << endl;
+		cout << "Teragramos (Tg)" << kg / 1000000000 << endl;
+		break;
+	default: cout << "Opcion incorrecta";
+	}
+}
